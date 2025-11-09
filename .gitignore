@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Go build artifacts
+bin/
+dist/
+coverage.out
+*.coverprofile
