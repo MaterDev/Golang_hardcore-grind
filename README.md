@@ -10,6 +10,10 @@ A collection of algorithmic coding challenges with a central harness to run test
 - `scripts/run.sh`
 - `CHALLENGES.md`
 
+## Requirements
+
+- Go 1.22+
+
 ## Usage
 
 - List challenges:
@@ -23,6 +27,8 @@ A collection of algorithmic coding challenges with a central harness to run test
   - `./scripts/run.sh -challenge two-sum -- -run '^TestTwoSum/basic$'`
 - Forward more flags to `go test` either explicitly or after `--`:
   - `-v`, `-race`, `-cover`, `-count`, `-timeout`, `-failfast`, `-bench`
+- Benchmark example (passthrough after `--`):
+  - `./scripts/run.sh -challenge two-sum -- -bench . -benchmem`
 
 ## Challenges checklist
 
