@@ -56,7 +56,7 @@ func TwoSum(nums []int, target int) []int {
 				if target - v1 == v2 {
 					fmt.Printf("👉🏾 Found a match: %v \n", v2)
 
-					result := []int{i1, originalIndexMatcher}
+					result := []int{min(i1, originalIndexMatcher), max(i1, originalIndexMatcher)}
 					fmt.Printf("returning slice: %v", result)
 
 					return result
