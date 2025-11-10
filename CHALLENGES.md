@@ -22,7 +22,7 @@ Status legend:
 
 ## Checklist
 
-- [ ] Two Sum (slug: two-sum)
+- [x] Two Sum (slug: two-sum)
   - Description: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
   - Problem: `func TwoSum(nums []int, target int) []int`
   - Rationale: The #1 icebreaker. Tests your knowledge of maps (hash tables) for O(n) efficiency vs. the O(n^2) brute-force.
