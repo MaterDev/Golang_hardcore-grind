@@ -30,11 +30,39 @@
 //     ./scripts/run.sh -challenge two-sum -run '^TestTwoSum/negatives$'
 package twosum
 
+import (
+	"fmt"
+)
+
 // TwoSum returns indices of two numbers in nums that add up to target.
 // If no such pair exists, it returns nil. The returned indices are in
 // ascending order (i < j).
 func TwoSum(nums []int, target int) []int {
+	fmt.Printf("🔥 TwoSum running with Nums: %v, Target: %v \n", nums, target)
+	
 	// TODO: Implement using an O(n) hash map approach as described above.
 	// Remember to return indices in ascending order. Return nil if no pair exists.
+
+	for i1, v1 := range nums {
+		fmt.Printf("Matching for %v \n", v1)
+		currentSlice := nums[i1 + 1:]
+
+			for i2, v2 := range nums[i1 + 1:] {
+				fmt.Printf("💧current slice: %v , at i2: %v \n", currentSlice, i2)
+
+				originalIndexMatcher := i1 + i2 + 1
+				fmt.Printf("⚡️ original index of v2: %v, in  %v ... is: %v \n", v2, nums, originalIndexMatcher)
+				
+				if target - v1 == v2 {
+					fmt.Printf("👉🏾 Found a match: %v \n", v2)
+
+					result := []int{i1, originalIndexMatcher}
+					fmt.Printf("returning slice: %v", result)
+
+					return result
+				}
+			}
+	}
+
 	return nil
 }
