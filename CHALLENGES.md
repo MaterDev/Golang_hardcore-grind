@@ -30,7 +30,7 @@ Status legend:
   - Link: [LeetCode – Two Sum](https://leetcode.com/problems/two-sum/)
   - Dir: [challenges/two-sum/](challenges/two-sum/)
 
-- [ ] Valid Palindrome (slug: valid-palindrome)
+- [x] Valid Palindrome (slug: valid-palindrome)
   - Description: Return true if a string is a palindrome after lowercasing and removing non-alphanumeric characters.
   - Problem: `func isPalindrome(s string) bool`
   - Rationale: Tests string normalization and two-pointer technique.
