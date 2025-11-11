@@ -2,6 +2,8 @@
 
 A running checklist of problems to tackle. We will add and refine this list as we go.
 
+For adding new challenges, see `CHALLENGE_TEMPLATE.md` for structure, naming, and testing guidelines.
+
 ## How to use
 
 - Add each challenge as a new checklist item in the section below.

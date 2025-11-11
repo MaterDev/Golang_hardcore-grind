@@ -34,6 +34,8 @@ A collection of algorithmic coding challenges with a central harness to run test
 
 Track planned and completed challenges in `CHALLENGES.md`. We will add items as we go.
 
+For adding new challenges, follow the guidelines in `CHALLENGE_TEMPLATE.md`.
+
 ## Adding a solution
 
 - Create `challenges/<slug>/solution.go` with the function(s) referenced by tests.
