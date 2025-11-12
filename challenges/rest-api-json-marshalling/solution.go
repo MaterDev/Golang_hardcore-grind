@@ -24,8 +24,14 @@ package restapijsonmarshalling
 
 // Geo represents the nested geo_location object with latitude and longitude.
 type Geo struct {
+	Lat float64 `json:"lat"`
+	Lon float64 `json:"lon"`
 }
 
 // User represents the top-level object.
 type User struct {
+	ID	int `json:"id"`
+	UserName string `json:"user_name"`
+	IsActive bool `json:"is_active"`
+	GeoLocation Geo `json:"geo_location"`
 }
